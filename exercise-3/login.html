@@ -1,0 +1,11 @@
+<form onsubmit="return validateLogin()" novalidate>
+  <input type="text" id="loginUsername" class="form-control my-2" placeholder="Username" required>
+  <div class="invalid-feedback">Username is required</div>
+
+  <input type="password" id="loginPassword" class="form-control my-2" placeholder="Password" required>
+  <div class="invalid-feedback">Password must be at least 6 characters</div>
+
+  <button type="submit" class="btn btn-dark w-100 mt-3">Login</button>
+</form>
+
+<script src="validation.js"></script>

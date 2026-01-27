@@ -1,0 +1,14 @@
+<form onsubmit="return validateRegister()" novalidate>
+  <input type="text" id="regUsername" class="form-control my-2" placeholder="Username" required>
+  <div class="invalid-feedback">Username is required</div>
+
+  <input type="email" id="regEmail" class="form-control my-2" placeholder="Email" required>
+  <div class="invalid-feedback">Enter a valid email</div>
+
+  <input type="password" id="regPassword" class="form-control my-2" placeholder="Password" required>
+  <div class="invalid-feedback">Password must be at least 6 characters</div>
+
+  <button type="submit" class="btn btn-dark w-100 mt-3">Register</button>
+</form>
+
+<script src="validation.js"></script>
