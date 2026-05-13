@@ -8,6 +8,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/",(req,res)=>{
+    res.send("api is running")
+})
+
 app.use("/auth", authRoutes);
 app.use("/students", studentRoutes);
 
@@ -17,6 +21,3 @@ app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
 });
 
-app.get("/",(req,res)=>{
-    res.send("api is running")
-})
